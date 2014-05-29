@@ -1,8 +1,5 @@
 package ru.nsu.fit.santaev.Model3d;
 
-import java.awt.Point;
-import java.awt.geom.Point2D;
-
 import ru.nsu.fit.santaev.MyPoint;
 
 public class Wall {

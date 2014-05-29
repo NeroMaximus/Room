@@ -532,7 +532,6 @@ public class MainFrame extends JFrame {
 
                     final Light light = new Light(new MyPoint(y, x, 0));
                     light.color = new Color(red_value, green_value, blue_value);
-                    light.brightness = 0.7;
                     synchronized (world.getLights()){
                         world.getLights().add(light);
                     }

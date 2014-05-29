@@ -176,7 +176,8 @@ public class MyThread extends Thread {
 		}
 		
 		ArrayList<Light> lights = new ArrayList<Light>();
-		for (Light light2 : renderer.world.getLights()) {
+		for ( int k = 0 ; k < renderer.world.getLights().size(); k++){
+            Light light2 = renderer.world.getLights().get(k);
 			if (Util.isVisible(renderer.world, new Ray(light2.position,
 					MyPoint.subPointToPoint(p, light2.position)), p)) {
 				lights.add(light2);

@@ -1,10 +1,8 @@
 package ru.nsu.fit.santaev.Model3d;
 
 import java.awt.Color;
-import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import ru.nsu.fit.santaev.MyPoint;
 
@@ -12,8 +10,8 @@ public class Renderer {
 
 	World world = null;
 
-	public int screenPixelHeight = 512;
-	public int screenPixelWidth = 512;
+	public int screenPixelHeight = 200;
+	public int screenPixelWidth = 200;
 
 	
 	public int threadCount = 4;
@@ -23,7 +21,7 @@ public class Renderer {
 		
 	}
 
-	public BufferedImage render() {
+	public synchronized BufferedImage render() {
 		BufferedImage scr = new BufferedImage(screenPixelWidth,
 				screenPixelHeight, BufferedImage.TYPE_3BYTE_BGR);
 		MyThread.img = scr;

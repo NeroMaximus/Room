@@ -1,8 +1,5 @@
 package ru.nsu.fit.santaev;
 
-import java.awt.Color;
-import java.awt.Point;
-
 public class MyPoint{
 	
 	private static final long serialVersionUID = 1L;

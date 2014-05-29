@@ -8,7 +8,7 @@ import ru.nsu.fit.santaev.MyPoint;
 public class Light {
 	
 	public MyPoint position = new MyPoint(0, 0, 0);
-	public double brightness = 1;
+	public double brightness = 0.3;
 	private double coefficienT_diffusion = 1;
 	private static double ambian = 0.1;
 	public Color color = Color.RED;
